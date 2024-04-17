@@ -1,0 +1,214 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+a {
+  text-decoration: none; /* 밑줄 제거 */
+  color: inherit; /* 링크의 색상을 부모 요소로부터 상속 */
+}
+.container {
+  display: flex;
+  min-height: 90vh;
+}
+.sidebar {
+  width: 270px;
+  height: 85vh;
+  border-radius: 5px;
+  background-color: #919191;
+  padding: 20px;
+  float: left;
+  margin: 20px;
+}
+.content{
+  text-align: center;
+  flex: 1;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 90px;
+}
+#media {
+  margin: 40px;
+}
+.main_text {
+  margin-top: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  color: #181818;
+  letter-spacing: 5px;
+  padding-right: 40px;
+}
+.img {
+  display: inline-block;
+    vertical-align: top;
+    width: 315px;
+    height: 315px;
+    border-radius: 50%; /* 이미지를 원 모양으로 만듦 */
+    overflow: hidden; /* 불필요한 부분을 자름 */
+    margin-right: 20px;
+}
+.img img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.video {
+  display: inline-block;
+    vertical-align: top;
+    margin-left: 40px;
+}
+.login-container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-family: 'Staatliches', cursive;
+  font-size: 5em;
+  color: #F1C164;
+  text-shadow: 5px 5px #2D63A7;
+  margin-top: 20px;
+}
+.menu_text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  color: #f1f1f1;
+  letter-spacing: 5px;
+  margin-top: 100px;
+}
+h1,h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  width: 60%; /* 버튼이 컨테이너의 너비를 차지하도록 설정 */
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 20px auto;
+}
+#main {
+  width: 50%; /* 버튼이 컨테이너의 너비를 차지하도록 설정 */
+  padding: 10px;
+  background-color: #b3b3b3;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 10px auto;
+}
+#main:hover {
+  background-color: black;
+}
+
+#login, #signup {
+  text-align: center;
+  width: 100px;
+  padding: 10px;
+  background-color: #fde596;
+  color: #a7a7a7;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin:8px;
+  margin-top: 50px;
+}
+
+#login:hover,
+#signup:hover {
+  background-color: black;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+  background-color: black;
+}
+
+.profile-image{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.profile-container{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+ul, li {
+  list-style-type: none;
+}
+li{
+  margin: 20px 0px;
+}
+
+#article {
+  border-bottom: 2px solid #919191;
+  padding: 20px; 
+  margin-bottom: 30px; 
+} 
+
+#scrollTopBtn {
+  display: none; /* 초기에는 숨겨짐 */
+  position: fixed; /* 페이지 내에서 고정 위치 */
+  bottom: 20px;
+  right: 20px;
+  z-index: 99; /* 다른 요소 위에 나타남 */
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center; /* 텍스트를 가운데 정렬 */
+  width: 1880px; 
+  position: fixed; /* 화면에 고정 */
+  bottom: 10px; /* 화면 하단에 배치 */
+  background-color: #fff; /* 배경색 설정 */
+  padding: 10px 0; /* 위아래 패딩 추가 */
+  margin: 10px 20px;
+  border-top: 2px solid #919191;
+}

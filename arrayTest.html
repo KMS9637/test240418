@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var coworkers = ["ongoing", "leezche"];
+        document.write("coworkers의 요소의 크기 : ")
+        document.write(coworkers.length)
+    </script>
+    <h1> Array </h1>
+    <h2>Syntax - set, 배열 선언</h2>
+    <script>
+        var coworkers = ["egoing", "leezche"];
+    </script>
+    <h2>get - 배열 값 가져오기</h2>
+    <script>
+        document.write("<h2>coworkers[0] : </h2>")
+        document.write(coworkers[0]);
+        document.write("<h2>coworkers[1] : </h2>")
+        document.write(coworkers[1]);
+    </script>
+    <!-- 배열은 단독으로 사용하기보다, 반복문과 같이 자주 사용
+    반복자 패턴 -->
+    <h2>add</h2>
+    <script>
+        coworkers.push('duru');
+        coworkers.push('taeho');
+    </script>
+
+    <h2>count</h2>
+    <script>
+        document.write(coworkers.length);
+    </script>
+    <h2>get - 배열 값 가져오기</h2>
+    <script>
+        document.write("<h2>coworkers[2] : </h2>")
+        document.write(coworkers[2]);
+        document.write("<h2>coworkers[3] : </h2>")
+        document.write(coworkers[3]);
+    </script>
+    <h2>Coworkers3</h2>
+    <ul>
+      <script>
+        var coworkers = ["국밥", "돈까스", "햄버거","마라탕"];
+        var i = 0;
+        while(i < coworkers.length) {
+          document.write('<li>'+ coworkers[i] + '</li>');
+          i = i + 1;
+        }
+      </script>
+    </ul>
+
+    <!-- 미니 실습,
+    배열 먹고 싶은 메뉴 3가지 이상 적어서,
+    반복문 이용해서, 출력해보기. -->
+
+    <h2>배열, 반복문 실습</h2>
+    <script>
+        var menu = ["우동","라면","김밥","밀면","피자"];
+        var i_2 = 0;
+        while(i_2 < menu.length){
+            document.write(menu[i_2])
+            if (i_2<menu.length-1){
+                document.write(', ')
+            }
+            i_2 = i_2+1;
+        }
+    </Script>
+</body>
+</html>

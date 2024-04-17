@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mp.css">
+
+    <title>board</title>
+</head>
+<body>
+  <div class="container">
+  <div class="sidebar">
+    <h1><a href="mp_main.html">Music</a></h1>
+    <div class="profile-container">
+        <img src="./coding.jpg" alt="프로필 이미지" class="profile-image">
+        <div class="profile-email">user@example.com</div>
+      </div>    
+
+    <div class="menu_text">
+    <h2>Menu</h2>
+    <ul class="menu">
+        <li><a href="mp_board.html">감상평 쓰기</a></li>
+        <!-- <li><a href="#">메뉴 2</a></li>
+        <li><a href="#">메뉴 3</a></li>
+        <li><a href="#">메뉴 4</a></li> -->
+    </ul>
+  </div>
+</div>
+
+
+    <!-- <h2>제목</h2>
+    <p>여기에 단락 내용이 들어갑니다. 여러 줄로 긴 내용을 표시할 수 있습니다.</p>
+
+    <div class="comment-container">
+        <div class="comment">
+          이것은 말풍선 모양의 댓글입니다. 말풍선은 오른쪽에 위치하며 내용이 길어지면 자동으로 줄바꿈됩니다.
+        </div>
+      </div> -->
+      <div class="content">
+        <div id="article">
+      <h2>게시판</h2>
+    </div>
+      <form id="post-form">
+          <input type="text" id="post-title" placeholder="제목" required>
+          <textarea id="post-content" placeholder="내용" required></textarea>
+          <button type="submit">게시</button>
+      </form>
+      </div>
+  </div>
+  <button id="scrollTopBtn" onclick="scrollToTop()">위로 가기</button>
+      <script src="./js/mp.js"></script>
+</body>
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2024 김민수 만듦</span>
+    </div>
+ </footer>
+</html>

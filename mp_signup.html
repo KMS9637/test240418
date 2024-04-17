@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mp.css">
+
+    <title>SignUp</title>
+</head>
+<body>
+  
+<div class="login-container">
+  <h2>SignUp</h2>
+<form id="signup-form">
+  <div>
+    <label for="username">ID 입력: (6자 이상 12자 이하)</label>
+    <input type="text" id="username" name="username" minlength="6" maxlength="12" required>
+  </div>
+  <div>
+    <label for="password">비밀번호:</label>
+    <input type="password" id="password" name="password" required>
+  </div>
+  <div>
+    <label for="email">이메일:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <button type="submit">Submit</button>
+    <button id="main">Main</button>
+  </div>
+</form>
+</div>
+<script src="./js/mp.js"></script>
+</body>
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2024 김민수 만듦</span>
+    </div>
+ </footer>
+</html>
